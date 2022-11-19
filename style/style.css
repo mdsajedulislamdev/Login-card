@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100vw;
+  height: 8vw;
+  background: linear-gradient(to left, rgba(29, 29, 29, 0.966), rgba(66, 66, 66, 0.911), rgba(27, 27, 27, 0.87));
+}
+.imageBackground {
+  width: 100vw;
+  height: 547px;
+  background-image: url(/image/cat.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.4;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.para {
+  position: absolute;
+  left: 50%;
+  top: 3%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 2.5vw;
+  opacity: 1;
+  z-index: 3;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  padding: 0.2vw 0.6vw;
+  color: white;
+  border-radius: 0.4vw;
+  transition: 0.4s ease-in-out;
+}
+li a:hover {
+  background-color: rgba(153, 209, 0, 0.747);
+  color: white;
+}
+
+.navbar .navTitle {
+  text-decoration: none;
+  font-size: 4vw;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.navbar .navTitle:hover {
+  color: orange;
+}
+.navList {
+  display: flex;
+  gap: 20px;
+}
+.navList .loginButton {
+  border: none;
+  outline: none;
+  font-size: 1.5vw;
+  color: white;
+  cursor: pointer;
+  padding: 0.2vw 0.6vw;
+  background-color: rgb(255, 167, 2);
+  border-radius: 0.4vw;
+  transition: 0.3s ease-in-out;
+}
+.navList .loginButton:hover {
+  background-color: green;
+}
+.navList img {
+  position: relative;
+  left: 5vw;
+  width: 2vw;
+  height: 2.5vw;
+  border-radius: 50%;
+}
+/* --------Responsive----------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .navList {
+    display: flex;
+    gap: 5px;
+  }
+  li a {
+    font-size: 3vw;
+  }
+  .navList img {
+    position: relative;
+    left: 3vw;
+    top: 0.5vw;
+    width: 3vw;
+    height: 3.5vw;
+    border-radius: 50%;
+  }
+  .navList .loginButton {
+    font-size: 3vw;
+  }
+}
+/* ---------------Login Area---------------------------------------------------------------------- */
+.loginPage {
+  width: 26vw;
+  height: 32vw;
+  padding: 2vw;
+  border-radius: 0.5vw;
+  background-color: rgba(0, 0, 0, 0); /* Fallback color*/
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.952));
+  position: fixed;
+  top: 50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loginPageContent .times {
+  position: absolute;
+  right: 0.8vw;
+  top: -0.3vw;
+  font-size: 2vw;
+  padding: 1px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.loginPageContent .times:hover {
+  color: rgb(202, 17, 17);
+  font-weight: bold;
+}
+.loginPageContent h1 {
+  background-color: white;
+  border-radius: 0.4vw;
+  color: orange;
+  text-align: center;
+  font-size: 2vw;
+}
+.loginPageContent input {
+  width: 22vw;
+  position: relative;
+  top: 3vw;
+  padding: 0.8vw;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3vw;
+  border-bottom: 1px solid rgb(255, 180, 40);
+}
+::placeholder {
+  color: white;
+  font-size: 1.1vw;
+}
+.loginPageContent .login {
+  width: 22vw;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 5vw;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.4vw;
+  background-color: orange;
+  transition: 0.3s ease-in-out;
+}
+.loginPageContent .login:hover {
+  background-color: green;
+  color: white;
+}
+.loginPageContent .signUpLink {
+  position: relative;
+  top: 6vw;
+  color: white;
+  font-size: 1vw;
+}
+.loginPageContent .signUp {
+  color: orange;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.loginPageContent .signUp:hover {
+  color: greenyellow;
+}
+.loginPageContent .loginWith {
+  position: relative;
+  top: 10vw;
+  text-align: center;
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
+}
+.loginPageContent .icon img {
+  width: 3vw;
+  position: relative;
+  top: 11vw;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.loginPageContent .icon {
+  display: flex;
+  justify-content: center;
+}
+/* --------------Responsive area--------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .loginPage {
+    width: 60vw;
+    height: 70vw;
+    padding: 5vw;
+    top: 190px;
+  }
+  .loginPageContent .times {
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    font-size: 5vw;
+    padding: 1px;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  .loginPageContent h1 {
+    font-size: 4.5vw;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 4px;
+  }
+  .loginPageContent input {
+    width: 49.1vw;
+    position: relative;
+    top: 5vw;
+    font-size: 17px;
+    padding: 8px;
+  }
+  ::placeholder {
+    color: white;
+    font-size: 3vw;
+  }
+  .loginPageContent .login {
+    width: 49.1vw;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 7vw;
+    padding: 0.9vw;
+    font-size: 3vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4vw;
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+  }
+  .loginPageContent .signUpLink {
+    position: relative;
+    top: 8vw;
+    color: white;
+    font-size: 3vw;
+  }
+  .loginPageContent .loginWith {
+    position: relative;
+    top: 15vw;
+    text-align: center;
+    color: orange;
+    font-size: 11px;
+  }
+  .loginPageContent .icon img {
+    width: 8vw;
+    position: relative;
+    top: 17vw;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .loginPage {
+    width: 35vw;
+    height: 40vw;
+    padding: 2vw;
+    top: 220px;
+  }
+  .loginPageContent input {
+    width: 30.5vw;
+    position: relative;
+    top: 5vw;
+    font-size: 15px;
+  }
+  ::placeholder {
+    color: white;
+    font-size: 1.4vw;
+  }
+  .loginPageContent .login {
+    width: 30.5vw;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 6.5vw;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4vw;
+    background-color: orange;
+    transition: 0.3s ease-in-out;
+  }
+  .loginPageContent .signUpLink {
+    position: relative;
+    top: 7.5vw;
+    color: white;
+    font-size: 1.2vw;
+  }
+  .loginPageContent .loginWith {
+    position: relative;
+    top: 15vw;
+    text-align: center;
+    color: orange;
+    font-size: 13px;
+  }
+  .loginPageContent .icon img {
+    width: 4vw;
+    position: relative;
+    top: 17vw;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .loginPage {
+    top: 250px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .loginPage {
+    top: 350px;
+  }
+}

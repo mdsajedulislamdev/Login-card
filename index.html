@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <link rel="stylesheet" href="/style//style.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div class="navbar">
+          <a href="#" class="navTitle">DEV.</a>
+          <ul class="navList">
+            <li><a href="#" class="navItem">Home</a></li>
+            <li><a href="#" class="navItem">Service</a></li>
+            <li><a href="#" class="navItem">About</a></li>
+            <li><a href="#" class="navItem">Contact</a></li>
+            <li><a href="#" class="navItem">Info</a></li>
+            <li><button onclick="toggle()" class="loginButton">Login</button></li>
+            <li><img src="/image/image.jpg" alt="avatar" /></li>
+          </ul>
+        </div>
+
+        <!-------------Image Background----------------------- -->
+        <div class="imageBackground">
+          <p class="para">Click in the login button to open login card</p>
+        </div>
+      </div>
+      <!-- ------vvvvv---------------------------------------- -->
+      <div id="openLoginPage" class="loginPage">
+        <div class="loginPageContent">
+          <!------------- times sign--------------- -->
+          <div onclick="toggle()" class="times">&times;</div>
+          <h1>Login Here</h1>
+          <input type="text" placeholder="Enter email here" />
+          <input type="password" placeholder="Enter password here" />
+          <button class="login">Login</button>
+          <p href="#" class="signUpLink">Don't have an account <a href="#" class="signUp">Sign up</a> here</p>
+          <p class="loginWith">Log in with</p>
+          <div class="icon">
+            <div>
+              <img src="/icon/google.svg" alt="icon" />
+              <img src="/icon/facebook.svg" alt="icon" />
+              <img src="/icon/instagram.svg" alt="icon" />
+              <img src="/icon/twitter.svg" alt="icon" />
+              <img src="/icon/youtube.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------- JavaScript Link----------------- -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
